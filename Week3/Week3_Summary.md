@@ -1,77 +1,88 @@
-# 📝 Week 3 Summary — Loops in Python (for / while)
+# สรุปเนื้อหาบทเรียน สัปดาห์ที่ 3: Loops in Python (for / while) & Control Flow
 
-**วิชา:** Script Programming (Sec 2)  
-**ชื่อ:** อัษฎาวุธ เรือนแก้ว | **รหัส:** 663380303-5
+**รายวิชา:** CP352301 การเขียนโปรแกรมสคริปต์ (Script Programming)  
+**ภาคเรียน:** 1/2569  
+**ผู้สอน:** ผู้ช่วยศาสตราจารย์บุญสืบ ไวคำ  
+**นักศึกษา:** อัษฎาวุธ เรือนแก้ว (รหัสนักศึกษา 663380303-5)  
+**กลุ่มเรียน (Section):** 2
 
 ---
 
-## 📌 หัวข้อที่เรียนในสัปดาห์นี้
+## 1. โครงสร้างการทำซ้ำ (Iteration and Loops)
 
-### 1. For Loop
-- ใช้วนซ้ำตามจำนวนรอบที่กำหนด
-- ใช้ร่วมกับ `range(start, stop, step)`
+### 1.1 โครงสร้างการทำซ้ำด้วยคำสั่ง `for`
+คำสั่ง `for` ในภาษา Python ใช้สำหรับการวนซ้ำตามจำนวนรอบที่แน่นอน (Definite Iteration) หรือการวนซ้ำผ่านสมาชิกในชุดข้อมูล (Sequence) เช่น `list`, `tuple`, `str` หรือการใช้ร่วมกับฟังก์ชัน `range(start, stop, step)`
+
 ```python
+# ตัวอย่างการใช้ for loop เพื่อพิมพ์สูตรคูณแม่ 7
+multiplier = 7
 for i in range(1, 13):
-    print(i)
+    print(f"{multiplier} x {i:2d} = {multiplier * i:3d}")
 ```
 
-### 2. While Loop
-- ใช้วนซ้ำจนกว่าเงื่อนไขจะเป็น `False`
+### 1.2 โครงสร้างการทำซ้ำด้วยคำสั่ง `while`
+คำสั่ง `while` ใช้สำหรับวนซ้ำจนกว่านิพจน์เงื่อนไขจะมีค่าความจริงเป็น `False` (Indefinite Iteration) เหมาะกับสถานการณ์ที่ไม่สามารถระบุจำนวนรอบที่แน่นอนล่วงหน้าได้
+
 ```python
-count = 5
-while count >= 0:
-    print(count)
-    count -= 1
+# ตัวอย่างการใช้วงวน while ในการนับถอยหลัง
+counter = 5
+while counter >= 0:
+    print(counter)
+    counter -= 1
 ```
 
-### 3. While-Else
-- บล็อก `else` ทำงานเมื่อลูปจบตามปกติ (ไม่ถูก `break`)
-- ถ้าลูปถูก `break` → `else` จะ **ไม่ทำงาน**
+### 1.3 โครงสร้างพิเศษ `while-else`
+ภาษา Python รองรับโครงสร้างคำสั่ง `else` ต่อท้ายโครงสร้างวนซ้ำ โดยชุดคำสั่งในบล็อก `else` จะถูกประมวลผล **เฉพาะเมื่อวงวนสิ้นสุดลงตามเงื่อนไขปกติเท่านั้น** (ไม่ถูกขัดจังหวะด้วยคำสั่ง `break`)
+
 ```python
+attempts = 0
+max_attempts = 5
+
 while attempts < max_attempts:
-    # ทาย...
-    if ถูก:
-        break
+    attempts += 1
+    # เงื่อนไขการตรวจสอบคำตอบ
+    # หากตอบถูกต้อง ให้ใช้คำสั่ง break
 else:
-    print("หมดโควตา!")
+    # จะทำงานเมื่อใช้สิทธิ์ครบ max_attempts โดยไม่ได้ break
+    print("Maximum attempts exceeded.")
 ```
 
-### 4. Nested Loops (ลูปซ้อนกัน)
-- ลูปนอก (Outer) ควบคุมแถว, ลูปใน (Inner) ควบคุมคอลัมน์
-- ใช้สร้างตารางสูตรคูณ 12×12
+---
 
-### 5. break & continue
-- `break` — หยุดลูปทันที
-- `continue` — ข้ามรอบปัจจุบัน ไปรอบถัดไป
+## 2. การซ้อนวงวนและคำสั่งควบคุมการทำงาน (Nested Loops & Control Statements)
 
-### 6. String Formatting ขั้นสูง
-- `f"{value:4d}"` — จัดความกว้างตัวเลข
-- `end=""` — ไม่ขึ้นบรรทัดใหม่หลัง print
+### 2.1 Nested Loops
+การซ้อนวงวนคือการใช้วงวนภายในอีกวงวนหนึ่ง โดยวงวนภายนอก (Outer Loop) ควบคุมการเปลี่ยนแถว และวงวนภายใน (Inner Loop) ควบคุมการเปลี่ยนคอลัมน์ ใช้ประโยชน์ในการประมวลผลข้อมูล 2 มิติ เช่น ตารางสูตรคูณหรือเมทริกซ์
+
+### 2.2 คำสั่งควบคุมการทำงานในวงวน
+- **`break`:** หยุดการประมวลผลของวงวนที่อยู่ใกล้ที่สุดทันที และข้ามไปยังคำสั่งถัดจากวงวนนั้น
+- **`continue`:** ยุติการทำงานในรอบปัจจุบันทันที และกระโดดไปยังการตรวจสอบเงื่อนไขสำหรับรอบถัดไป
 
 ---
 
-## 📂 ไฟล์ในสัปดาห์นี้
+## 3. เทคนิคการจัดรูปแบบเอาต์พุต (Advanced String Formatting)
 
-| ไฟล์ | คำอธิบาย |
-|------|---------|
-| `Lab3.ipynb` | รวม Lab 3.1 และ Lab 3.2 พร้อม Challenge |
+- การจัดความกว้างของตัวเลขโดยระบุ Format Specifiers ใน f-string เช่น `f"{value:4d}"` เพื่อจองพื้นที่ 4 อักขระและจัดเรียงตัวเลขชิดขวา
+- การควบคุมพฤติกรรมขึ้นบรรทัดใหม่ของฟังก์ชัน `print()` โดยกำหนดค่าพารามิเตอร์ `end=""` เพื่อไม่ให้เลื่อนบรรทัดใหม่หลังพิมพ์เสร็จสิ้น
 
-### Lab 3.1: Multiplication Table Generator
-- **Part 1:** สูตรคูณเลขเดียว (for loop + range)
-- **Part 2:** ตาราง 12×12 (Nested loops)
-- **Challenge:** ตาราง 12×12 พร้อม Header และเส้นแบ่ง
-
-### Lab 3.2: Countdown & Guessing Game
-- **Part 1:** Countdown Timer (while loop)
-- **Part 2:** เกมทายตัวเลข (while True + break)
-- **Challenge 1:** Guessing Game จำกัดรอบ (while-else + random)
-- **Challenge 2:** Countdown พร้อม Progress Bar (time.sleep)
+```python
+# การสร้างตารางสูตรคูณขนาด 12x12
+for row in range(1, 13):
+    for col in range(1, 13):
+        print(f"{row * col:4d}", end="")
+    print()  # ขึ้นบรรทัดใหม่เมื่อสิ้นสุดแต่ละแถว
+```
 
 ---
 
-## 💡 สิ่งที่ได้เรียนรู้
-- ความแตกต่างระหว่าง `for` loop (รู้จำนวนรอบ) กับ `while` loop (ไม่รู้จำนวนรอบ)
-- การใช้ `while-else` เป็นรูปแบบเฉพาะของ Python ที่ภาษาอื่นไม่ค่อยมี
-- การใช้ `import random` และ `import time` เพื่อเพิ่มความสมจริงให้โปรแกรม
-- Nested Loops สำหรับสร้างตาราง 2 มิติ
-- การใช้ String Formatting (`f-string` ร่วม format spec) เพื่อจัดข้อมูลให้สวยงาม
+## 4. สรุปไฟล์ปฏิบัติการประจำสัปดาห์ (`Lab3.ipynb`)
+
+| หัวข้อปฏิบัติการ | สาระสำคัญทางเทคนิค |
+|:---|:---|
+| **Lab 3.1 Part 1** | **Single Number Multiplication Table:** การใช้ `for` loop ร่วมกับ `range(1, 13)` เพื่อสร้างตารางสูตรคูณของตัวเลขที่กำหนด |
+| **Lab 3.1 Part 2** | **Full 12x12 Multiplication Grid:** การประยุกต์ใช้ Nested Loops สร้างตารางสูตรคูณ 2 มิติ ขนาด 12x12 พร้อมการจัดความกว้างอักขระ |
+| **Lab 3.2 Part 1** | **Countdown Timer:** การสร้างระบบนับถอยหลังด้วยคำสั่ง `while` พร้อมการคำนวณลดค่าตัวแปร (Decrement) |
+| **Lab 3.2 Part 2** | **Simple Guessing Game:** เกมทายตัวเลขโดยใช้วงวน `while True` ร่วมกับการตรวจสอบเงื่อนไขและการใช้คำสั่ง `break` |
+| **Challenge 1** | **Guessing Game with Limited Attempts:** การพัฒนาระบบเกมทายตัวเลขจำกัดจำนวนรอบโดยใช้โครงสร้าง `while-else` และ `import random` |
+| **Challenge 2** | **Enhanced Countdown with Progress Bar:** การสร้างแถบความคืบหน้า (Progress Bar) แบบข้อความ พร้อมการใช้ `import time` และฟังก์ชัน `time.sleep(1)` |
+| **Challenge 3** | **Formatted Multiplication Table with Header:** การตกแต่งตารางสูตรคูณด้วยเส้นตาราง หัวแถว (Row Header) และหัวคอลัมน์ (Column Header) |

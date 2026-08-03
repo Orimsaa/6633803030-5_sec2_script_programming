@@ -1,413 +1,175 @@
-# 📝 Week 1 Summary — Introduction to Python & Basic Syntax
+# สรุปเนื้อหาบทเรียน สัปดาห์ที่ 1: Introduction to Python & Basic Syntax
 
-**วิชา:** CP352301 Script Programming (Sec 2)  
-**ชื่อ:** อัษฎาวุธ เรือนแก้ว | **รหัส:** 663380303-5  
-**วันเรียน:** SEC2 Onsite วันอังคาร 23/6/69 เวลา 8:30-12:30 ห้อง SC9226
-
----
-
-## 📌 กิจกรรมสัปดาห์นี้
-1. แนะนำรายวิชา
-2. บรรยายเรื่อง Getting Started with Python
-3. ทำ Class Activities (Week 1: Python พื้นฐาน)
+**รายวิชา:** CP352301 การเขียนโปรแกรมสคริปต์ (Script Programming)  
+**ภาคเรียน:** 1/2569  
+**ผู้สอน:** ผู้ช่วยศาสตราจารย์บุญสืบ ไวคำ  
+**นักศึกษา:** อัษฎาวุธ เรือนแก้ว (รหัสนักศึกษา 663380303-5)  
+**กลุ่มเรียน (Section):** 2 (เรียน Onsite วันอังคาร 23/6/69 เวลา 08:30 - 12:30 น. ห้อง SC9226)
 
 ---
 
-## 📋 ข้อมูลรายวิชาโดยรวม
+## 1. ข้อมูลภาพรวมรายวิชาและการประเมินผล
 
-**รหัสวิชา:** CP352301 Script Programming ภาคเรียน 1/2569  
-**รูปแบบ:** self-paced, hybrid, online, project-based พร้อมใบรับรอง  
-**ผู้สอน:** ผศ.บุญสืบ ไวคำ
+### 1.1 โครงสร้างรายวิชา (3 ส่วนหลัก)
+| ส่วนที่ | ชื่อหัวข้อหลัก | รายละเอียดเนื้อหา |
+|:---:|:---|:---|
+| 1 | **Basics of Python** | ภาคบรรยายและการเรียนรู้ด้วยตนเอง: Introduction & Syntax, Strings & Console Output, Conditionals, Functions, Lists & Dictionaries, Loops, Advanced Topics, Classes, File I/O |
+| 2 | **Application of Python** | ภาคปฏิบัติการ (Lab & Experiment): Systems and Network Programming, การพัฒนา Python สำหรับแอปพลิเคชันสมัยใหม่ |
+| 3 | **Project & Conclusion** | การทำโครงงานและบทสรุป: Mini Project (Midterm), Term Project (Final), Final Exam |
 
-### โครงสร้างวิชา 3 ส่วน
+### 1.2 สัดส่วนการให้คะแนน
+| หมวดหมู่การประเมิน | สัดส่วนคะแนน |
+|:---|:---:|
+| การเข้าชั้นเรียนและส่วนร่วม | 10% |
+| การเรียนรู้ออนไลน์รายบุคคล | 15% |
+| กิจกรรมและงานกลุ่ม | 20% |
+| โครงงานย่อย (Mini Project) | 15% |
+| โครงงานปลายภาค (Final Project) | 20% |
+| การสอบปลายภาค (Final Exam) | 20% |
 
-| ส่วนที่ | เนื้อหา | รายละเอียด |
-|:-------:|---------|-----------|
-| 1 | **Basics of Python** | บรรยาย + เรียนออนไลน์ด้วยตนเอง: Intro & Syntax, Strings & Console Output, Conditionals, Functions, Lists & Dictionaries, Loops, Advanced Topics, Classes, File I/O |
-| 2 | **Application of Python** | Lab & Experiment: Systems/Network Programming, Python สำหรับแอปสมัยใหม่ |
-| 3 | **Project & Conclusion** | Mini Project (midterm), Term Project (final), Final Exam |
+### 1.3 เกณฑ์การประเมินผลการเรียน
+- **เกณฑ์ผ่านขั้นต่ำ (D):** ผลการเรียนใน Codecademy / Datacamp ไม่ต่ำกว่า 90% และผลสอบ Netacad Exam ไม่ต่ำกว่า 50% (สำหรับใบรับรอง CISCO)
+- **เกณฑ์ผลการเรียนดีเยี่ยม (A):** ต้องได้คะแนนมากกว่า 80% ในทุกหมวดหมู่การประเมิน (เข้าเรียน, งานรายสัปดาห์, ปฏิบัติการ, โครงงาน และการสอบปลายภาค)
 
-### การให้คะแนน
-
-| หมวด | สัดส่วน |
-|------|:-------:|
-| เข้าเรียน | 10% |
-| เรียนออนไลน์รายบุคคล | 15% |
-| งานกลุ่ม | 20% |
-| Mini Project | 15% |
-| Final Project | 20% |
-| Final Exam | 20% |
-
-### เกณฑ์เกรด
-- **ผ่านขั้นต่ำ (D):** Codecademy/Datacamp ≥ 90%, Netacad Exam ≥ 50% (สำหรับใบรับรอง CISCO)
-- **เกรด A:** ต้องได้ > 80% ใน **ทุกหมวด** (เข้าเรียน, งานรายสัปดาห์, Lab, Mini/Final Project, Final Exam)
-
-### นโยบายสำคัญ
-- ⚠️ **ความซื่อสัตย์ทางวิชาการ** — ห้ามคัดลอกโค้ดกัน, ห้ามส่งโค้ดทางอีเมล/แชท/โพสต์บนเว็บ → โทษ: 0 คะแนนโปรเจกต์, ลดเกรดเฉลี่ย 10%, รายงานต่อคณะกรรมการวินัย
-- 🎓 **มารยาทในห้องเรียน** — ตรงเวลา, ไม่คุยระหว่างบรรยาย, ปิดเสียงมือถือ, ใช้แล็ปท็อปอย่างเหมาะสม
-
-### เครื่องมือแนะนำ
-- **Generative AI:** Gemini, ChatGPT, DeepSeek, Copilot — ช่วยเรียนรู้/เขียนโค้ด
-- **Google Colab** — สำหรับ lab พื้นฐาน
-- **GitHub** — สำหรับ lab ขั้นสูง/portfolio
-- **NotebookLM** — สำหรับสรุปบทเรียน
+### 1.4 นโยบายทางวิชาการและระเบียบปฏิบัติ
+- **ความซื่อสัตย์ทางวิชาการ:** ห้ามคัดลอกรหัสต้นฉบับ (Code) หรือส่งต่อไฟล์งานทางอีเมล/สื่อสังคมออนไลน์ หากตรวจสอบพบการทุจริต จะถูกปรับคะแนนโครงงานเป็น 0 คะแนน หักเกรดเฉลี่ยรายวิชาลง 10% และรายงานต่อคณะกรรมการวินัยนักศึกษา
+- **มารยาทในชั้นเรียน:** เข้าเรียนตรงเวลา ไม่ส่งเสียงดังรบกวนระหว่างการบรรยาย ปิดเสียงโทรศัพท์มือถือ และใช้อุปกรณ์คอมพิวเตอร์เฉพาะประโยชน์ต่อการเรียนการสอนเท่านั้น
 
 ---
 
-## 📖 เนื้อหา Getting Started with Python
+## 2. ภาคทฤษฎี: Getting Started with Python
 
-### 1. ปรัชญาของ Python (Zen of Python)
-> - สวยงาม ดีกว่า อัปลักษณ์ *(Beautiful is better than ugly)*
-> - ชัดเจน ดีกว่า กำกวม *(Explicit is better than implicit)*
-> - เรียบง่าย ดีกว่า ซับซ้อน *(Simple is better than complex)*
-> - **ความอ่านง่ายสำคัญที่สุด** *(Readability counts)*
+### 2.1 ปรัชญาของภาษา Python (Zen of Python)
+Python ให้ความสำคัญกับโครงสร้างที่อ่านง่ายและตรงไปตรงมา ตามแนวคิดของ Tim Peters ดังนี้
+- ความสวยงามย่อมดีกว่าความอัปลักษณ์ (Beautiful is better than ugly)
+- ความชัดเจนย่อมดีกว่าความกำกวม (Explicit is better than implicit)
+- ความเรียบง่ายย่อมดีกว่าความซับซ้อน (Simple is better than complex)
+- **ความอ่านง่ายคือสิ่งสำคัญที่สุด (Readability counts)**
 
-### 2. ลักษณะทั่วไปของ Python
-- **Dynamic typing** — ไม่ต้องประกาศชนิดข้อมูลล่วงหน้า
-- **จัดการหน่วยความจำอัตโนมัติ** (Garbage Collection)
-- รองรับหลายรูปแบบการเขียนโปรแกรม: **OOP, Imperative, Functional, Procedural**
-- มี **Standard Library** ครอบคลุมหลากหลาย
-- **Python 2.x** = เวอร์ชันเก่า (EOL) / **Python 3.x** = เวอร์ชันปัจจุบัน
+### 2.2 คุณลักษณะทางเทคนิคของภาษา Python
+- **Dynamic Typing:** กำหนดชนิดข้อมูลและเปลี่ยนแปลงได้ในระหว่างเวลาประมวลผล (Runtime) โดยไม่ต้องประกาศชนิดข้อมูลล่วงหน้า
+- **Automatic Memory Management:** จัดการหน่วยความจำอัตโนมัติด้วยระบบ Garbage Collection
+- **Multi-paradigm:** รองรับการเขียนโปรแกรมเชิงวัตถุ (OOP), เชิงคำสั่ง (Imperative), เชิงฟังก์ชัน (Functional) และเชิงกระบวนการ (Procedural)
+- **Standard Library:** มีไลบรารีมาตรฐานที่ครอบคลุมการทำงานด้านเครือข่าย วิทยาศาสตร์ข้อมูล และระบบปฏิบัติการ
 
-### 3. การเริ่มต้นใช้งาน
-
-```bash
-# ตรวจสอบเวอร์ชัน
-python --version
-
-# เข้าสู่ Interactive Shell (REPL)
-python
-# หรือ
-python3
-
-# รันโค้ดแบบ string
-python -c 'print("Hello")'
-
-# ติดตั้งแพ็กเกจ
-pip install <ชื่อแพ็กเกจ>
-```
-
-**วิธีเขียนโปรแกรม:**
-- เขียนด้วย IDLE หรือสร้างไฟล์ `.py` แล้วรันผ่าน terminal
-- ใช้ **interactive shell (REPL)** สำหรับทดสอบโค้ดสั้นๆ
-- **Online Shell:** python.org/shell, repl.it, ideone.com
-
-### 4. ตัวแปรและการตั้งชื่อ (Variables & Naming)
+### 2.3 การตั้งชื่อและจัดการตัวแปร (Variables & Naming Conventions)
+- **หลักการตั้งชื่อ:** ต้องขึ้นต้นด้วยตัวอักษรภาษาอังกฤษหรือเครื่องหมาย `_` ตามด้วยตัวอักษร ตัวเลข หรือ `_` โดยมีความไวต่ออักษรตัวพิมพ์เล็ก-ใหญ่ (Case-sensitive) และห้ามใช้คำสงวน (Keywords)
+- **การกำหนดค่า (Assignment):** นิพจน์ด้านขวาจะถูกประมวลผลก่อนนำไปเก็บในตัวแปรด้านซ้าย รองรับ Multiple Assignment และ Cascading Assignment
 
 ```python
-# สร้างตัวแปร (ซ้ายไปขวาเท่านั้น)
-name = "Tonkla"
-age = 20
-pi = 3.14
+# ตัวอย่างการประกาศและกำหนดค่าตัวแปร
+student_name = "Tonkla"
+student_age = 20
+is_enrolled = True
 
-# กำหนดค่าหลายตัวแปรพร้อมกัน
-x, y, z = 1, 2, 3
+# การกำหนดค่าแบบหลายตัวแปรพร้อมกัน (Multiple Assignment)
+x, y, z = 10, 20, 30
 
-# Cascading assignment
-a = b = c = 0
+# การกำหนดค่าแบบต่อเนื่อง (Cascading Assignment)
+first_counter = second_counter = third_counter = 0
 ```
 
-**กฎการตั้งชื่อตัวแปร:**
-| กฎ | ตัวอย่าง |
-|----|---------|
-| ต้องขึ้นต้นด้วยตัวอักษรหรือ `_` | `name`, `_count` ✅ / `1name` ❌ |
-| ตามด้วยตัวอักษร, ตัวเลข, `_` ได้ | `my_var2` ✅ |
-| **case-sensitive** | `Name` ≠ `name` |
-| ห้ามใช้ keyword ของ Python | `if`, `for`, `class` ❌ |
-
-> ⚡ **ตัวแปรใน Python เปลี่ยนชนิดข้อมูลได้ตลอดเวลา** (Dynamic Typing)
-
-### 5. Block Indentation
-
-Python ใช้ **การเว้นวรรค (indentation)** แทนวงเล็บปีกกา `{ }` ในการกำหนดขอบเขตของ block:
+### 2.4 การย่อหน้าและขอบเขตคำสั่ง (Block Indentation)
+Python ใช้การย่อหน้า (Indentation) เพื่อระบุขอบเขตของชุดคำสั่ง (Block scope) แทนการใช้วงเล็บปีกกา โดยมีเครื่องหมายทวิภาค `:` เป็นตัวนำหน้ากลุ่มคำสั่งตามมาตรฐาน PEP 8 ซึ่งแนะนำให้ใช้ช่องว่าง 4 ตัวอักษร (4 Spaces)
 
 ```python
-if age >= 18:
-    print("Adult")      # ← ย่อหน้า 4 spaces = อยู่ใน if block
-    print("Can vote")   # ← ย่อหน้า 4 spaces = อยู่ใน if block
-print("Done")           # ← ไม่ย่อหน้า = อยู่นอก if block
+score = 85
+
+if score >= 80:
+    print("Grade: A")        # อยู่ภายในขอบเขตเงื่อนไข if
+    print("Status: Passed")  # อยู่ภายในขอบเขตเงื่อนไข if
+print("Evaluation Completed") # อยู่ภายนอกขอบเขตเงื่อนไข if
 ```
 
-> 📏 **PEP 8** แนะนำให้ใช้ **4 spaces** แทน tab
+### 2.5 ชนิดข้อมูลพื้นฐาน (Built-in Data Types)
 
-### 6. ชนิดข้อมูลพื้นฐาน (Built-in Types)
+| ชนิดข้อมูล | หมวดหมู่ | ลักษณะและความหมาย | ตัวอย่าง |
+|:---|:---|:---|:---|
+| `int` | Numeric | จำนวนเต็มที่มีขนาดไม่จำกัด (Arbitrary-precision) | `42`, `-150`, `999999999` |
+| `float` | Numeric | จำนวนจริงหรือทศนิยมมาตรฐาน IEEE 754 | `3.14159`, `-0.005` |
+| `complex` | Numeric | จำนวนเชิงซ้อน (ส่วนจริง + ส่วนจินตภาพ) | `3+4j` |
+| `bool` | Boolean | ค่าทางตรรกศาสตร์ (Subclass ของ int) | `True`, `False` |
+| `str` | Sequence | อักขระหรือข้อความแบบ Unicode (Immutable) | `"Python"`, `'Script'` |
+| `list` | Sequence | รายการข้อมูลแบบเรียงลำดับและแก้ไขค่าได้ | `[10, 20, 30]` |
+| `tuple` | Sequence | รายการข้อมูลแบบเรียงลำดับแต่แก้ไขค่าไม่ได้ | `(10, 20, 30)` |
+| `dict` | Mapping | การจับคู่คีย์และค่า (Key-Value Pairs) | `{"name": "Tonkla", "gpa": 3.75}` |
+| `set` | Set | เซตของข้อมูลที่ไม่ซ้ำกันและไม่มีลำดับ | `{1, 2, 3}` |
 
-#### Primitive Types
-
-| ชนิด | คำอธิบาย | ตัวอย่าง |
-|------|---------|---------|
-| `bool` | ค่าความจริง (subclass ของ int) | `True`, `False` |
-| `int` | จำนวนเต็ม (ขนาดไม่จำกัด) | `42`, `-10`, `999999999999` |
-| `float` | ทศนิยม | `3.14`, `-0.5` |
-| `complex` | จำนวนเชิงซ้อน | `3+4j` |
-| `str` | สตริง (ข้อความ) | `"Hello"`, `'World'` |
-
-#### Collection Types
-
-| ชนิด | ลักษณะ | Mutable? | ตัวอย่าง |
-|------|--------|:--------:|---------|
-| `list` | ลำดับ, ซ้ำได้ | ✅ | `[1, 2, 3]` |
-| `tuple` | ลำดับ, ซ้ำได้ | ❌ | `(1, 2, 3)` |
-| `set` | ไม่ซ้ำ, ไม่มีลำดับ | ✅ | `{1, 2, 3}` |
-| `dict` | key-value pairs | ✅ | `{"a": 1, "b": 2}` |
-
-#### Built-in Constants
-- `True`, `False` — ค่าความจริง
-- `None` — ค่าว่าง (ไม่มีค่า)
-- `Ellipsis` (`...`) — ใช้ใน slicing ขั้นสูง
-- `NotImplemented` — ใช้ใน operator overloading
-
-#### ตรวจสอบชนิดข้อมูล
-```python
-type(42)           # <class 'int'>
-type("Hello")      # <class 'str'>
-isinstance(42, int)  # True
-```
-
-### 7. การแปลงชนิดข้อมูล (Type Conversion)
+### 2.6 ความแตกต่างระหว่าง Mutable และ Immutable
+- **Immutable Types:** ออบเจกต์ที่สร้างแล้วไม่สามารถแก้ไขข้อมูลภายในได้ ได้แก่ `int`, `float`, `str`, `tuple`, `bool`, `frozenset` หากทำการเปลี่ยนแปลงค่า ระบบจะสร้างออบเจกต์ใหม่ในหน่วยความจำ
+- **Mutable Types:** ออบเจกต์ที่สามารถเปลี่ยนแปลงหรือปรับปรุงค่าภายในหน่วยความจำตำแหน่งเดิมได้ ได้แก่ `list`, `dict`, `set`, `bytearray`
 
 ```python
-# string → int
-int("42")        # 42
+# การตรวจสอบตำแหน่งหน่วยความจำด้วยฟังก์ชัน id()
+text_value = "Script"
+first_id = id(text_value)
 
-# string → float
-float("3.14")    # 3.14
+text_value += " Programming"  # สำหรับ str จะสร้างออบเจกต์ใหม่
+second_id = id(text_value)
 
-# int → string
-str(42)          # "42"
-
-# float string → int (ต้องแปลง 2 ขั้น!)
-int(float("3.14"))  # 3    ← ต้องทำแบบนี้
-# int("3.14")       # ❌ ValueError!
-
-# แปลงเป็น list/set
-list("abc")      # ['a', 'b', 'c']
-set([1, 2, 2, 3])  # {1, 2, 3}
+print(first_id == second_id)  # ผลลัพธ์: False (ชี้ไปยังคนละตำแหน่งหน่วยความจำ)
 ```
 
-### 8. ชนิดสตริงพิเศษ
-
-| Prefix | ชนิด | ใช้งาน |
-|:------:|------|-------|
-| `b'...'` | bytes | ข้อมูลแบบ byte |
-| `u'...'` | unicode | สตริง unicode (default ใน Python 3) |
-| `r'...'` | raw string | ไม่ escape อักขระพิเศษ เช่น `r'\n'` แสดงเป็น `\n` จริงๆ |
-
-### 9. Mutable vs Immutable
-
-| Immutable (แก้ไขไม่ได้) | Mutable (แก้ไขได้) |
-|:-----------------------:|:-----------------:|
-| `int`, `float`, `str` | `list`, `dict`, `set` |
-| `tuple`, `frozenset` | `bytearray` |
+### 2.7 การแปลงชนิดข้อมูล (Type Conversion)
+- **Implicit Conversion:** การแปลงชนิดข้อมูลอัตโนมัติของตัวแปลภาษา เช่น การบวก `int` กับ `float` ผลลัพธ์จะกลายเป็น `float`
+- **Explicit Conversion (Casting):** การแปลงชนิดข้อมูลโดยคำสั่งของผู้เขียนโปรแกรม เช่น `int()`, `float()`, `str()`, `list()`, `set()`
 
 ```python
-# ใช้ id() ตรวจสอบว่าเป็น object เดียวกันหรือไม่
-x = "hello"
-y = x
-print(id(x) == id(y))  # True — ชี้ไปที่ object เดียวกัน
-
-x = "world"             # สร้าง object ใหม่
-print(id(x) == id(y))  # False — x ชี้ไปที่ object ใหม่แล้ว
+# การแปลงข้อมูลข้อความที่เป็นเลขทศนิยมให้กลายเป็นจำนวนเต็ม
+value_str = "45.89"
+value_int = int(float(value_str))  # ต้องแปลงเป็น float ก่อนแล้วจึงแปลงเป็น int
+print(value_int)                   # ผลลัพธ์: 45
 ```
-
-### 10. Collection Types แบบละเอียด
-
-#### List
-```python
-fruits = ["apple", "banana", "cherry"]
-fruits[0]          # "apple"
-fruits[-1]         # "cherry"
-fruits.append("date")
-fruits.insert(1, "blueberry")
-fruits.remove("banana")
-fruits.pop(0)      # ลบและคืนค่าที่ตำแหน่ง 0
-len(fruits)        # จำนวนสมาชิก
-```
-
-#### Tuple
-```python
-point = (10, 20)
-point[0]           # 10
-# point[0] = 99    # ❌ TypeError — immutable!
-```
-
-#### Dictionary
-```python
-student = {"name": "Tonkla", "age": 20}
-student["name"]     # "Tonkla"
-student["gpa"] = 3.5  # เพิ่ม key ใหม่
-
-# iterate
-for key in student.keys():
-    print(key, student[key])
-```
-
-#### Set
-```python
-nums = {1, 2, 3, 3, 2}  # {1, 2, 3} — ไม่ซ้ำ
-3 in nums               # True — ตรวจสอบสมาชิกเร็วกว่า list
-```
-
-#### defaultdict
-```python
-from collections import defaultdict
-dd = defaultdict(int)    # ค่าเริ่มต้น = 0
-dd["count"] += 1         # ไม่ต้องเช็คว่า key มีอยู่หรือไม่ — ป้องกัน KeyError
-```
-
-### 11. การรับข้อมูลจากผู้ใช้ (Interactive Input)
-
-```python
-# Python 3
-name = input("Enter your name: ")    # ได้ค่าเป็น str เสมอ
-age = int(input("Enter your age: "))  # ต้องแปลงเป็น int ก่อนคำนวณ
-
-# Python 2 (ไม่ใช้แล้ว)
-# name = raw_input("Enter your name: ")
-```
-
-> ⚠️ `input()` คืนค่าเป็น **string เสมอ** — ต้อง cast ก่อนนำไปคำนวณ!
 
 ---
 
-## 📖 เนื้อหา Week 1: Introduction to Python & Basic Syntax
+## 3. ภาคปฏิบัติการ (Labs & Activities)
 
-### เป้าหมายการเรียนรู้
-1. เข้าใจบทบาทของ Python ใน scripting
-2. เขียน/รันสคริปต์พื้นฐานได้
-3. แยกแยะชนิดข้อมูลพื้นฐานได้
+### 3.1 Lab 1.1: Environment Setup and Hello World
+การทดสอบสภาพแวดล้อมการทำงานผ่าน Visual Studio Code หรือ Google Colab ด้วยการเรียกใช้คำสั่งพื้นฐาน
 
-**เกณฑ์ประเมิน:** ความอ่านง่ายของโค้ด, ไวยากรณ์ที่ถูกต้อง, การรันสคริปต์สำเร็จ
-
-### Python คืออะไร?
-- ภาษาระดับสูงแบบ **interpreted**
-- อ่านง่ายคล้าย pseudo-code
-- ใช้ในงาน: **Automation, Web Development, Data Analysis, AI/ML**
-
-### การติดตั้งสภาพแวดล้อม
-
-| เครื่องมือ | รายละเอียด |
-|-----------|-----------|
-| **Anaconda** | ชุดติดตั้งสำหรับ data science (มี Python + library พร้อมใช้) |
-| **VS Code** | พร้อม Python extension และเลือก interpreter |
-| **Google Colab** | ใช้งานผ่านเบราว์เซอร์ ไม่ต้องติดตั้ง เหมาะกับผู้เริ่มต้น |
-
-### ไวยากรณ์พื้นฐาน
-
-#### print()
 ```python
+# Lab 1.1: Hello World Script
 print("Hello, World!")
-print("A", "B", "C", sep="-")  # A-B-C
-print("Hello", end=" ")
-print("World")                  # Hello World (ไม่ขึ้นบรรทัดใหม่)
+print("CP352301", "Script", "Programming", sep=" - ")
 ```
 
-#### Comments
-```python
-# Comment บรรทัดเดียว
+### 3.2 Lab 1.2: Variables, Arithmetic, f-string and Input Conversion
+การเขียนโปรแกรมรับข้อมูลผู้ใช้ คำนวณนิพจน์ทางคณิตศาสตร์ และจัดรูปแบบการแสดงผลด้วย f-string
 
-'''
-Comment
-หลายบรรทัด
-(หรือ docstring)
-'''
+```python
+# Lab 1.2: Student Data Processing Script
+student_name = input("Enter Student Name: ")
+birth_year = int(input("Enter Birth Year (A.D.): "))
+current_year = 2026
+
+age = current_year - birth_year
+
+print(f"Student Profile: {student_name}")
+print(f"Calculated Age: {age} years old")
 ```
 
-#### ตัวแปร & ชนิดข้อมูล
-```python
-name = "Tonkla"      # str
-age = 20             # int
-gpa = 3.75           # float
-is_student = True    # bool
+### 3.3 Activity 1.2: Python Puzzlers
+การวิเคราะห์พฤติกรรมและการทำงานของภาษา Python จากข้อคำถามทางเทคนิค
 
-# f-string
-print(f"ชื่อ {name} อายุ {age} ปี GPA {gpa}")
-```
-
-#### Input/Output
 ```python
-name = input("ชื่อ: ")           # ได้ str
-age = int(input("อายุ: "))       # แปลงเป็น int
-height = float(input("ส่วนสูง: "))  # แปลงเป็น float
+# Puzzler 1: การดำเนินการระหว่างตัวเลขและสตริง
+result_str = "10" + "20"
+print(result_str)  # ผลลัพธ์: "1020" (String Concatenation ไม่ใช่การบวกทางคณิตศาสตร์)
+
+# Puzzler 2: การตรวจสอบชนิดข้อมูลผลลัพธ์ของ Input
+raw_data = input("Enter number: ")  # หากผู้ใช้กรอก 50 ค่าที่ได้คือ 'str'
+# total = raw_data + 10             # จะเกิด TypeError เนื่องจากไม่สามารถบวก str กับ int ได้
 ```
 
 ---
 
-## 📂 Labs & Activities
+## 4. สรุปข้อผิดพลาดที่พบบ่อย (Common Error Messages)
 
-### Lab 1.1: Hello World
-ติดตั้ง Python/VS Code หรือใช้ Colab แล้วรันสคริปต์ "Hello World"
-
-```python
-print("Hello, World!")
-```
-
-### Lab 1.2: ตัวแปร, เลขคณิต, f-string & Input
-เขียนสคริปต์ประกาศตัวแปรหลายชนิด, คำนวณเลขคณิตพื้นฐาน, ต่อสตริงด้วย f-string, รับค่าจากผู้ใช้พร้อมแปลงชนิดข้อมูล
-
-```python
-# ประกาศตัวแปร
-name = "Tonkla"
-age = 20
-pi = 3.14159
-
-# เลขคณิต
-a, b = 10, 3
-print(f"{a} + {b} = {a + b}")
-print(f"{a} - {b} = {a - b}")
-print(f"{a} * {b} = {a * b}")
-print(f"{a} / {b} = {a / b}")
-print(f"{a} // {b} = {a // b}")  # หารปัดลง
-print(f"{a} % {b} = {a % b}")    # เศษจากการหาร
-print(f"{a} ** {b} = {a ** b}")  # ยกกำลัง
-
-# Input + แปลงชนิด
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
-print(f"Hello {name}, you are {age} years old!")
-```
-
-### Activity 1.1: อภิปรายกลุ่ม
-- การประยุกต์ใช้ scripting ในชีวิตจริง
-- ตัวอย่าง: Automation, Web Scraping, Data Analysis ฯลฯ
-
-### Activity 1.2: Python Puzzlers
-ดูโค้ดสั้นๆ แล้วทายผลลัพธ์และชนิดข้อมูล:
-
-```python
-# Puzzle 1: int + float = ?
-result = 10 + 3.14
-print(type(result))   # <class 'float'>  ← int + float ได้ float
-
-# Puzzle 2: string + string (ที่ดูเหมือนตัวเลข)
-result = "10" + "20"
-print(result)          # "1020"  ← ไม่ใช่ 30! เป็นการต่อ string
-
-# Puzzle 3: input() ที่ไม่แปลงชนิด
-x = input("Enter number: ")  # ผู้ใช้พิมพ์ 5
-y = x + 10                    # ❌ TypeError! — str + int ไม่ได้
-```
-
----
-
-## 💡 Error Messages ที่ควรรู้
-
-| Error | สาเหตุ | ตัวอย่าง |
-|-------|--------|---------|
-| `SyntaxError` | ไวยากรณ์ผิด | ลืมปิดวงเล็บ, ลืม `:` หลัง if |
-| `TypeError` | ใช้ชนิดข้อมูลผิด | `"5" + 10` (str + int) |
-| `NameError` | ใช้ตัวแปรที่ยังไม่ได้สร้าง | `print(x)` โดยไม่เคยสร้าง x |
-| `ValueError` | ค่าไม่ถูกต้อง | `int("hello")` |
-
----
-
-## 💡 สิ่งที่ได้เรียนรู้ในสัปดาห์นี้
-
-1. **Python** เป็นภาษา interpreted ระดับสูง ที่เน้นความอ่านง่ายและเรียบง่าย
-2. **Dynamic Typing** — ตัวแปรเปลี่ยนชนิดข้อมูลได้ตลอด ไม่ต้องประกาศชนิดล่วงหน้า
-3. **Indentation** คือหัวใจของ Python — ใช้ 4 spaces แทน `{ }` ตาม PEP 8
-4. **Built-in Types** มีหลากหลาย: bool, int, float, str, list, tuple, set, dict
-5. ต้องเข้าใจ **Mutable vs Immutable** — เป็นพื้นฐานสำคัญสำหรับการจัดการข้อมูล
-6. `input()` คืนค่าเป็น **string เสมอ** — ลืมแปลงชนิดจะ error
-7. Python ใช้ในงานจริงหลากหลาย: **Automation, Web Dev, Data Analysis, AI/ML**
-8. เครื่องมือที่ใช้ในวิชา: **Anaconda, VS Code, Google Colab, GitHub, NotebookLM**
+| ชื่อข้อผิดพลาด | สาเหตุของการเกิดข้อผิดพลาด | วิธีการแก้ไข |
+|:---|:---|:---|
+| `SyntaxError` | โครงสร้างไวยากรณ์ไม่ถูกต้องตามกฎของภาษา | ตรวจสอบวงเล็บ เครื่องหมายทวิภาค `:` หรือเครื่องหมายอัญประกาศ |
+| `TypeError` | การกระทำระหว่างชนิดข้อมูลที่ไม่รองรับกัน | ใช้ฟังก์ชันแปลงชนิดข้อมูล เช่น `int()`, `str()`, `float()` |
+| `NameError` | การเรียกใช้ตัวแปรที่ยังไม่ได้ประกาศในขอบเขต | ตรวจสอบการสะกดชื่อตัวแปรและการกำหนดค่าก่อนเรียกใช้ |
+| `ValueError` | ข้อมูลมีรูปแบบไม่เหมาะสมกับการแปลงค่า | ตรวจสอบเนื้อหาข้อมูลก่อนทำการ Casting เช่น ไม่ใช้ `int("abc")` |
+| `IndentationError` | การเว้นวรรคและการย่อหน้าไม่ถูกต้องหรือไม่สม่ำเสมอ | ตรวจสอบการใช้ Space 4 ช่อง และหลีกเลี่ยงการผสมระหว่าง Space และ Tab |
