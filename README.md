@@ -1,9 +1,10 @@
 # 6633803030-5_sec2_script_programming
 
-📚 **วิชา:** Script Programming  
+📚 **วิชา:** CP352301 Script Programming ภาคเรียน 1/2569  
 👤 **ชื่อ:** อัษฎาวุธ เรือนแก้ว  
 🆔 **รหัสนักศึกษา:** 663380303-5  
-📌 **Section:** 2
+📌 **Section:** 2  
+👨‍🏫 **ผู้สอน:** ผศ.บุญสืบ ไวคำ
 
 ---
 
@@ -11,6 +12,7 @@
 
 | สัปดาห์ | หัวข้อ | โฟลเดอร์ |
 |:-------:|--------|:--------:|
+| Week 1 | Introduction to Python & Basic Syntax | [Week1](./Week1) |
 | Week 2 | Variables, Operators, Conditions & String Operations | [Week2](./Week2) |
 | Week 3 | Loops (for / while), Nested Loops, break/continue | [Week3](./Week3) |
 | Week 4 | Data Structures: Lists & Tuples | [Week4](./Week4) |
@@ -18,6 +20,15 @@
 ---
 
 ## 📝 รายละเอียดแต่ละสัปดาห์
+
+### 🔹 Week 1 — Introduction to Python & Basic Syntax
+- แนะนำรายวิชา, โครงสร้างการให้คะแนน, นโยบายความซื่อสัตย์ทางวิชาการ
+- ปรัชญาของ Python (Zen of Python), ลักษณะทั่วไปของภาษา
+- การติดตั้ง: Anaconda, VS Code, Google Colab
+- ตัวแปร, ชนิดข้อมูลพื้นฐาน, Type Conversion, Mutable vs Immutable
+- Block Indentation (PEP 8), print(), input(), f-string
+- Collection Types: list, tuple, set, dict, defaultdict
+- **สรุป:** [Week1_Summary.md](./Week1/Week1_Summary.md)
 
 ### 🔹 Week 2 — Variables, Operators & Conditions
 - ตัวแปร, ชนิดข้อมูล (str, int, float, bool), Type Casting
