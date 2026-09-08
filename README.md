@@ -17,6 +17,8 @@
 | 2 | Variables, Operators, Conditions & String Operations | [Learning Outcomes Week 2](./Week2/Week2_Summary.md) | [Week2](./Week2) |
 | 3 | Loops in Python (for / while) & Control Flow | [Learning Outcomes Week 3](./Week3/Week3_Summary.md) | [Week3](./Week3) |
 | 4 | Data Structures: Lists & Tuples | [Learning Outcomes Week 4](./Week4/Week4_Summary.md) | [Week4](./Week4) |
+| 5 | Data Structures: Dictionaries & Sets | [Learning Outcomes Week 5](./week5/Week5_Summary.md) | [week5](./week5) |
+| 6 | Functions & Modules | [Learning Outcomes Week 6](./week6/Week6_Summary.md) | [week6](./week6) |
 
 ---
 
@@ -50,3 +52,17 @@
 - **LO 4.3:** สามารถพัฒนาระบบจัดการข้อมูลนักศึกษาแบบ CRUD (Create, Read, Update, Delete) โดยประยุกต์ใช้ List และวงวนควบคุมได้
 - **ไฟล์ปฏิบัติการ:** Lab_4_Script_.ipynb
 - **เอกสารผลลัพธ์การเรียนรู้:** [Week4_Summary.md](./Week4/Week4_Summary.md)
+
+### สัปดาห์ที่ 5: Data Structures: Dictionaries & Sets
+- **LO 5.1:** สามารถจัดระเบียบข้อมูลด้วยโครงสร้างคู่กุญแจ-ค่า (Dictionaries) เพื่อการดึงข้อมูลที่รวดเร็วระดับ O(1) ได้
+- **LO 5.2:** สามารถจัดการชุดข้อมูลที่ไม่ซ้ำกัน (Sets) และดำเนินการทางคณิตศาสตร์เชิงเซต (Union, Intersection, Difference, Symmetric Difference) ได้
+- **LO 5.3:** สามารถเลือกใช้โครงสร้างข้อมูลที่เหมาะสม (List, Tuple, Dictionary, Set) สำหรับปัญหาที่กำหนดได้
+- **ไฟล์ปฏิบัติการ:** Sec2_week5_6633803030-5.ipynb, lab5_1.py, lab5_2.py, activity5_2.py
+- **เอกสารผลลัพธ์การเรียนรู้:** [Week5_Summary.md](./week5/Week5_Summary.md)
+
+### สัปดาห์ที่ 6: Functions & Modules
+- **LO 6.1:** สามารถนิยามและเรียกใช้ฟังก์ชัน (Functions) เพื่อส่งเสริมการใช้โค้ดซ้ำ (Code Reusability) และความเป็นโมดูล (Modularity) ได้
+- **LO 6.2:** สามารถเข้าใจแนวคิดของพารามิเตอร์ (Parameters), อาร์กิวเมนต์ (Arguments), ค่าเริ่มต้น (Default Values) และค่าส่งกลับ (Return Values) ได้
+- **LO 6.3:** สามารถแยกแยะขอบเขตตัวแปร (Variable Scope) ระหว่าง Local และ Global และนำเข้าใช้งานฟังก์ชันจากโมดูลมาตรฐานและโมดูลที่สร้างขึ้นเองได้
+- **ไฟล์ปฏิบัติการ:** Sec2_week6_6633803030-5.ipynb, lab6_1.py, my_utils.py, main_program.py, activity6_1.py
+- **เอกสารผลลัพธ์การเรียนรู้:** [Week6_Summary.md](./week6/Week6_Summary.md)
