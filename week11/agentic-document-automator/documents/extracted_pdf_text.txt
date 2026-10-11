@@ -1,0 +1,15 @@
+Internal Project Proposal
+ 
+Project: Agentic Document Automation. This document describes an internal tool that generates
+reports, protects PDF files with watermarks and merges documentation.
+Scope: Word report generation from templates, PDF watermarking, PDF merging and text
+extraction.
+Owner: Aussadawut Ruenkaew. Status: Approved for internal use only.
+
+--- Page End ---
+Budget and Timeline
+Phase 1 (Week 1): Template design and configuration format.
+Phase 2 (Week 2): PDF tasks (watermark, merge, extract).
+Phase 3 (Week 3): Audit report and testing. Estimated budget: 0 THB (open-source libraries).
+
+--- Page End ---
