@@ -23,14 +23,14 @@
 | 8 | Automating with CSV and JSON Data (LabX Basic & Advanced) | [Learning Outcomes Week 8](./Summary/Week8_Summary.md) | [LabX Basic](./LabX%20Basic) · [LabX Advance](./LabX%20Advance) |
 | 10 | Automating Spreadsheets (LabX Basic & Advanced) | [Learning Outcomes Week 10](./Summary/Week10_Summary.md) | [LabX Basic](./LabX%20Basic) · [LabX Advance](./LabX%20Advance) |
 | 11 | Automating PDFs & Word Documents (LabX Basic & Advanced) | [Learning Outcomes Week 11](./Summary/Week11_Summary.md) | [LabX Basic](./LabX%20Basic) · [LabX Advance](./LabX%20Advance) |
-| 12 | Final Project & Agentic Communication (Email & SMS) | [Learning Outcomes Week 12](./Summary/Week12_Summary.md) | [Lab](./Lab) · [LabX Advance](./LabX%20Advance) |
+| 12 | Final Project & Automating Communications (Email & SMS) | [Learning Outcomes Week 12](./Summary/Week12_Summary.md) | [Lab](./Lab) · [LabX Advance](./LabX%20Advance) |
 | – | Class Activity 1–4 (คะแนนเสริม) | [รายการกิจกรรม](./Class%20activity/README.md) | [Class activity](./Class%20activity) |
 
 ### โครงสร้างโฟลเดอร์งานสัปดาห์ที่ 7–12
 
 | โฟลเดอร์ | เนื้อหา |
 |:---|:---|
-| [LabX Basic](./LabX%20Basic) | LabX BASIC สัปดาห์ที่ 7, 8, 10, 11 |
+| [LabX Basic](./LabX%20Basic) | LabX BASIC สัปดาห์ที่ 7, 8, 10, 11, 12 |
 | [LabX Advance](./LabX%20Advance) | LabX ADV สัปดาห์ที่ 7, 8, 10, 11, 12 |
 | [Lab](./Lab) | Lab 12: Final Project Development |
 | [Class activity](./Class%20activity) | Class Activity 1–4 |
@@ -114,7 +114,7 @@
 ### สัปดาห์ที่ 12: Final Project & Agentic Communication
 - **LO 12.1:** สามารถพัฒนา Task Manager แบบ OOP หลายโมดูล พร้อม Search / Filter / Sort และ Unit Tests ได้
 - **LO 12.2:** สามารถส่งอีเมล/SMS แบบ template และประมวลผลอีเมลขาเข้าด้วยกฎ if-then โดยจัดการ credentials ผ่าน `.env` ได้
-- **ไฟล์ปฏิบัติการ:** [Lab/week12-final-task-manager-project](./Lab/week12-final-task-manager-project), [LabX Advance/week12-agentic-comm-automator](./LabX%20Advance/week12-agentic-comm-automator)
+- **ไฟล์ปฏิบัติการ:** [Lab/week12-final-task-manager-project](./Lab/week12-final-task-manager-project), [LabX Basic/week12-email-sms-automator](./LabX%20Basic/week12-email-sms-automator), [LabX Advance/week12-agentic-comm-automator](./LabX%20Advance/week12-agentic-comm-automator)
 - **เอกสารผลลัพธ์การเรียนรู้:** [Week12_Summary.md](./Summary/Week12_Summary.md)
 
 ### Class Activity (คะแนนเสริม)

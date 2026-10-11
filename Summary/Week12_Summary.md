@@ -39,4 +39,5 @@
 | งาน | โฟลเดอร์ |
 |:---|:---|
 | Lab 12: Final Project Development | [final_task_manager_project](../Lab/week12-final-task-manager-project) |
+| LabX BASIC: Automating Communications (Email & SMS) | [email-sms-automator](../LabX%20Basic/week12-email-sms-automator) |
 | LabX ADV: Agentic Communication Workflows | [agentic-comm-automator](../LabX%20Advance/week12-agentic-comm-automator) |

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Secrets
+.env
+
+# Runtime output
+outbox/
+data/attachments/*
+!data/attachments/.gitkeep
