@@ -47,6 +47,9 @@ Gmail: เปิด 2-Step Verification → สร้าง App password แล�
 
 ## ผลลัพธ์
 
+### Terminal (ส่งจริงผ่าน Gmail SMTP/IMAP)
+![live run](screenshots/terminal_live.png)
+
 ### Unit tests
 ![unit tests](screenshots/unit_tests.png)
 

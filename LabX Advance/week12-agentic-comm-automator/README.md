@@ -66,6 +66,9 @@ App passwords → สร้างรหัส 16 ตัวอักษร แล
 
 ## ผลลัพธ์
 
+### Terminal (ส่งจริงผ่าน Gmail SMTP/IMAP)
+![live run](screenshots/terminal_live.png)
+
 ### Terminal (dry-run)
 ![terminal](screenshots/terminal_output.png)
 
