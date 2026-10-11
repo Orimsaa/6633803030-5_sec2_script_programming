@@ -47,6 +47,11 @@ Gmail: เปิด 2-Step Verification → สร้าง App password แล�
 
 ## ผลลัพธ์
 
+### ภาพหน้าจออีเมลจริง (Gmail)
+![gmail inbox](screenshots/gmail_inbox.png)
+
+> อีเมล `(no subject) - Address not found` คือ SMS ที่ส่งไป gateway `@txt.att.net` แล้วตีกลับ เพราะ gateway ใช้ได้เฉพาะเครือข่ายในสหรัฐฯ (โปรแกรมส่งออกไปถูกต้องแล้ว)
+
 ### Terminal (ส่งจริงผ่าน Gmail SMTP/IMAP)
 ![live run](screenshots/terminal_live.png)
 
@@ -55,7 +60,3 @@ Gmail: เปิด 2-Step Verification → สร้าง App password แล�
 
 ### Terminal (dry-run)
 ![dry run](screenshots/terminal_dry_run.png)
-
-### ภาพหน้าจออีเมลจริง
-หลังตั้งค่า `.env` และรัน `python main.py` ให้แคปหน้าจอ Gmail ที่ได้รับอีเมลจาก Task 1, 2 และ 4
-แล้วบันทึกเป็น `screenshots/gmail_inbox.png`

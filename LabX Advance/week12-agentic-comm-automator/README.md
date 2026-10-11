@@ -66,6 +66,11 @@ App passwords → สร้างรหัส 16 ตัวอักษร แล
 
 ## ผลลัพธ์
 
+### ภาพหน้าจออีเมลจริง (Gmail)
+![gmail inbox](screenshots/gmail_inbox.png)
+
+> อีเมล `(no subject) - Address not found` คือ SMS ที่ส่งไป gateway `@txt.att.net` แล้วตีกลับ เพราะ gateway ใช้ได้เฉพาะเครือข่ายในสหรัฐฯ (โปรแกรมส่งออกไปถูกต้องแล้ว)
+
 ### Terminal (ส่งจริงผ่าน Gmail SMTP/IMAP)
 ![live run](screenshots/terminal_live.png)
 
@@ -74,7 +79,3 @@ App passwords → สร้างรหัส 16 ตัวอักษร แล
 
 ### ตัวอย่างอีเมลที่ agent สร้าง (dry-run preview ไม่ใช่ภาพจาก Gmail)
 ![email preview](screenshots/email_preview_dry_run.png)
-
-### ภาพหน้าจออีเมลจริง
-หลังตั้งค่า `.env` และรัน `python main.py` ให้แคปหน้าจอกล่องจดหมาย Gmail ที่ได้รับอีเมล
-"Daily Sales Report" และ "Re: Data Request ..." แล้วบันทึกเป็น `screenshots/gmail_inbox.png`
