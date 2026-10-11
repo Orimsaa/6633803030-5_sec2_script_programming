@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Editor / OS
+.vscode/
+.ipynb_checkpoints/
+.DS_Store
+
+# Environment
+.env
+
+# temporary file used while saving tasks
+data/*.tmp
