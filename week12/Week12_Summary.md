@@ -38,5 +38,5 @@
 ## ไฟล์ปฏิบัติการ
 | งาน | โฟลเดอร์ |
 |:---|:---|
-| Lab 12: Final Project Development | [final_task_manager_project](./final_task_manager_project) |
-| LabX ADV: Agentic Communication Workflows | [agentic-comm-automator](./agentic-comm-automator) |
+| Lab 12: Final Project Development | [final_task_manager_project](../Lab/week12-final-task-manager-project) |
+| LabX ADV: Agentic Communication Workflows | [agentic-comm-automator](../LabX%20Advance/week12-agentic-comm-automator) |

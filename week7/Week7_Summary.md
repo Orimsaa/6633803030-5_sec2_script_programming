@@ -49,12 +49,12 @@ chapters = [a.get_text(strip=True) for a in soup.find("div", class_="content-bod
 และ CSS selector ของแต่ละฟิลด์ — เปลี่ยนเว็บเป้าหมายได้โดยไม่แก้โค้ด ข้อมูลถูกเก็บเป็น `dataclass Product` แล้วบันทึก JSON
 
 ## 4. จริยธรรม
-ตรวจ `robots.txt` และ ToS, หน่วงเวลาระหว่าง request, ไม่เก็บข้อมูลส่วนบุคคล, ใช้ API แทนถ้ามี (รายละเอียดใน `agentic-web-scraper/docs/ETHICS.md`)
+ตรวจ `robots.txt` และ ToS, หน่วงเวลาระหว่าง request, ไม่เก็บข้อมูลส่วนบุคคล, ใช้ API แทนถ้ามี (รายละเอียดใน `LabX Advance/week7-agentic-web-scraper/docs/ETHICS.md`)
 
 ---
 
 ## ไฟล์ปฏิบัติการ
 | งาน | โฟลเดอร์ | ผลลัพธ์ |
 |:---|:---|:---|
-| LabX BASIC 1: Introduction to Web Scraping | [web-scraping-intro](./web-scraping-intro) | ชื่อหนังสือ + 27 บทจาก automatetheboringstuff.com |
-| LabX ADV 1: Advanced Web Scraping & Automated Agents | [agentic-web-scraper](./agentic-web-scraper) | 40 รายการหนังสือจาก 2 หน้า → `data/scraped_products.json` |
+| LabX BASIC 1: Introduction to Web Scraping | [web-scraping-intro](../LabX%20Basic/week7-web-scraping-intro) | ชื่อหนังสือ + 27 บทจาก automatetheboringstuff.com |
+| LabX ADV 1: Advanced Web Scraping & Automated Agents | [agentic-web-scraper](../LabX%20Advance/week7-agentic-web-scraper) | 40 รายการหนังสือจาก 2 หน้า → `data/scraped_products.json` |

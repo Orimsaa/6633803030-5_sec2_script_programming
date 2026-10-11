@@ -26,6 +26,16 @@
 | 12 | Final Project & Agentic Communication (Email & SMS) | [Learning Outcomes Week 12](./week12/Week12_Summary.md) | [week12](./week12) |
 | – | Class Activity 1–4 (คะแนนเสริม) | [รายการกิจกรรม](./Class%20activity/README.md) | [Class activity](./Class%20activity) |
 
+### โครงสร้างโฟลเดอร์งานสัปดาห์ที่ 7–12
+
+| โฟลเดอร์ | เนื้อหา |
+|:---|:---|
+| [LabX Basic](./LabX%20Basic) | LabX BASIC สัปดาห์ที่ 7, 8, 10, 11 |
+| [LabX Advance](./LabX%20Advance) | LabX ADV สัปดาห์ที่ 7, 8, 10, 11, 12 |
+| [Lab](./Lab) | Lab 12: Final Project Development |
+| [Class activity](./Class%20activity) | Class Activity 1–4 |
+| week7 – week12 | เอกสารสรุปผลลัพธ์การเรียนรู้ (WeekN_Summary.md) |
+
 ---
 
 ## ผลลัพธ์การเรียนรู้รายสัปดาห์ (Key Learning Outcomes)
@@ -77,34 +87,34 @@
 - **LO 7.1:** สามารถดึงและแยกข้อมูลจาก HTML ด้วย `requests` และ `BeautifulSoup4` พร้อมจัดการข้อผิดพลาดของเครือข่ายได้
 - **LO 7.2:** สามารถควบคุมเบราว์เซอร์ด้วย Selenium (headless, explicit wait, pagination) และออกแบบ scraper แบบ config-driven พร้อม retry ได้
 - **LO 7.3:** สามารถอธิบายข้อพิจารณาด้านจริยธรรมและกฎหมายของการทำ web scraping ได้
-- **ไฟล์ปฏิบัติการ:** web-scraping-intro/ (LabX Basic), agentic-web-scraper/ (LabX ADV)
+- **ไฟล์ปฏิบัติการ:** [LabX Basic/week7-web-scraping-intro](./LabX%20Basic/week7-web-scraping-intro), [LabX Advance/week7-agentic-web-scraper](./LabX%20Advance/week7-agentic-web-scraper)
 - **เอกสารผลลัพธ์การเรียนรู้:** [Week7_Summary.md](./week7/Week7_Summary.md)
 
 ### สัปดาห์ที่ 8: Automating with CSV and JSON Data
 - **LO 8.1:** สามารถอ่าน เขียน กรอง และรวมกลุ่มข้อมูล CSV ด้วยโมดูล `csv` ได้
 - **LO 8.2:** สามารถจัดการ JSON แบบซ้อน (อัปเดต เพิ่ม ค้นด้วย dot-path) และแปลง CSV ↔ JSON ได้
 - **LO 8.3:** สามารถสร้าง Data Agent ที่ทำงานตาม pipeline ใน config พร้อม audit report ได้
-- **ไฟล์ปฏิบัติการ:** data-processor/ (LabX Basic), agentic-data-processor/ (LabX ADV)
+- **ไฟล์ปฏิบัติการ:** [LabX Basic/week8-data-processor](./LabX%20Basic/week8-data-processor), [LabX Advance/week8-agentic-data-processor](./LabX%20Advance/week8-agentic-data-processor)
 - **เอกสารผลลัพธ์การเรียนรู้:** [Week8_Summary.md](./week8/Week8_Summary.md)
 
 ### สัปดาห์ที่ 10: Automating Spreadsheets
 - **LO 10.1:** สามารถอ่าน/สร้าง/จัดรูปแบบไฟล์ Excel ด้วย `openpyxl` ได้
 - **LO 10.2:** สามารถใช้สูตร, Conditional Formatting, Data Validation และกราฟผ่านโค้ดได้
 - **LO 10.3:** สามารถสร้าง Spreadsheet Agent ที่บันทึกการทำงานลงชีต Audit Log และอธิบายแนวคิด Google Sheets API ได้
-- **ไฟล์ปฏิบัติการ:** spreadsheet-automator/ (LabX Basic), agentic-spreadsheet-processor/ (LabX ADV)
+- **ไฟล์ปฏิบัติการ:** [LabX Basic/week10-spreadsheet-automator](./LabX%20Basic/week10-spreadsheet-automator), [LabX Advance/week10-agentic-spreadsheet-processor](./LabX%20Advance/week10-agentic-spreadsheet-processor)
 - **เอกสารผลลัพธ์การเรียนรู้:** [Week10_Summary.md](./week10/Week10_Summary.md)
 
 ### สัปดาห์ที่ 11: Automating PDFs & Word Documents
 - **LO 11.1:** สามารถดึงข้อความ รวม และใส่ลายน้ำไฟล์ PDF ด้วย `PyPDF2` และ `reportlab` ได้
 - **LO 11.2:** สามารถสร้างเอกสาร Word และรายงานจาก template ด้วย `python-docx` ได้
 - **LO 11.3:** สามารถสร้าง Document Agent ที่ทำงานตาม config พร้อม audit report ได้
-- **ไฟล์ปฏิบัติการ:** document-automator/ (LabX Basic), agentic-document-automator/ (LabX ADV)
+- **ไฟล์ปฏิบัติการ:** [LabX Basic/week11-document-automator](./LabX%20Basic/week11-document-automator), [LabX Advance/week11-agentic-document-automator](./LabX%20Advance/week11-agentic-document-automator)
 - **เอกสารผลลัพธ์การเรียนรู้:** [Week11_Summary.md](./week11/Week11_Summary.md)
 
 ### สัปดาห์ที่ 12: Final Project & Agentic Communication
 - **LO 12.1:** สามารถพัฒนา Task Manager แบบ OOP หลายโมดูล พร้อม Search / Filter / Sort และ Unit Tests ได้
 - **LO 12.2:** สามารถส่งอีเมล/SMS แบบ template และประมวลผลอีเมลขาเข้าด้วยกฎ if-then โดยจัดการ credentials ผ่าน `.env` ได้
-- **ไฟล์ปฏิบัติการ:** final_task_manager_project/ (Lab 12), agentic-comm-automator/ (LabX ADV)
+- **ไฟล์ปฏิบัติการ:** [Lab/week12-final-task-manager-project](./Lab/week12-final-task-manager-project), [LabX Advance/week12-agentic-comm-automator](./LabX%20Advance/week12-agentic-comm-automator)
 - **เอกสารผลลัพธ์การเรียนรู้:** [Week12_Summary.md](./week12/Week12_Summary.md)
 
 ### Class Activity (คะแนนเสริม)

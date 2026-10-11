@@ -50,5 +50,5 @@ PDF แบบสแกนต้องใช้ OCR, ข้อความที�
 ## ไฟล์ปฏิบัติการ
 | งาน | โฟลเดอร์ | ผลลัพธ์ |
 |:---|:---|:---|
-| LabX BASIC: Automating PDFs & Word Documents | [document-automator](./document-automator) | `output_report.docx`, `merged_output.pdf` |
-| LabX ADV: Agentic Document Automation | [agentic-document-automator](./agentic-document-automator) | `generated_report.docx`, `watermarked_document.pdf`, `merged_docs.pdf` |
+| LabX BASIC: Automating PDFs & Word Documents | [document-automator](../LabX%20Basic/week11-document-automator) | `output_report.docx`, `merged_output.pdf` |
+| LabX ADV: Agentic Document Automation | [agentic-document-automator](../LabX%20Advance/week11-agentic-document-automator) | `generated_report.docx`, `watermarked_document.pdf`, `merged_docs.pdf` |

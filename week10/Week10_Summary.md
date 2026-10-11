@@ -49,5 +49,5 @@ out.save("data/output_sales_report.xlsx")
 ## ไฟล์ปฏิบัติการ
 | งาน | โฟลเดอร์ | ผลลัพธ์ |
 |:---|:---|:---|
-| LabX BASIC: Automating Spreadsheets | [spreadsheet-automator](./spreadsheet-automator) | `output_sales_report.xlsx` (Grand Total 3,203.97) |
-| LabX ADV: Advanced Spreadsheet Automation & Agentic Workflows | [agentic-spreadsheet-processor](./agentic-spreadsheet-processor) | `output_report.xlsx` ชีต Audit Log / SalesData / Raw Data / Summary |
+| LabX BASIC: Automating Spreadsheets | [spreadsheet-automator](../LabX%20Basic/week10-spreadsheet-automator) | `output_sales_report.xlsx` (Grand Total 3,203.97) |
+| LabX ADV: Advanced Spreadsheet Automation & Agentic Workflows | [agentic-spreadsheet-processor](../LabX%20Advance/week10-agentic-spreadsheet-processor) | `output_report.xlsx` ชีต Audit Log / SalesData / Raw Data / Summary |

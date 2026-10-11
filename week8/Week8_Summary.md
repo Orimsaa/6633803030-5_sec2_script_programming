@@ -45,5 +45,5 @@ with open(out, "w", newline="", encoding="utf-8") as f:
 ## ไฟล์ปฏิบัติการ
 | งาน | โฟลเดอร์ | ผลลัพธ์ |
 |:---|:---|:---|
-| LabX BASIC: Automating with CSV and JSON Data | [data-processor](./data-processor) | `output_filtered_sales.csv`, `output_updated_inventory.json` |
-| LabX ADV: Agentic Data Processing | [agentic-data-processor](./agentic-data-processor) | `processed_sales_by_customer.csv`, `sales_data.json`, `updated_inventory.json`, audit report |
+| LabX BASIC: Automating with CSV and JSON Data | [data-processor](../LabX%20Basic/week8-data-processor) | `output_filtered_sales.csv`, `output_updated_inventory.json` |
+| LabX ADV: Agentic Data Processing | [agentic-data-processor](../LabX%20Advance/week8-agentic-data-processor) | `processed_sales_by_customer.csv`, `sales_data.json`, `updated_inventory.json`, audit report |
