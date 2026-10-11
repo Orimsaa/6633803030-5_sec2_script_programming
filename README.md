@@ -19,6 +19,12 @@
 | 4 | Data Structures: Lists & Tuples | [Learning Outcomes Week 4](./Week4/Week4_Summary.md) | [Week4](./Week4) |
 | 5 | Data Structures: Dictionaries & Sets | [Learning Outcomes Week 5](./week5/Week5_Summary.md) | [week5](./week5) |
 | 6 | Functions & Modules | [Learning Outcomes Week 6](./week6/Week6_Summary.md) | [week6](./week6) |
+| 7 | Web Scraping (LabX Basic & Advanced) | [Learning Outcomes Week 7](./week7/Week7_Summary.md) | [week7](./week7) |
+| 8 | Automating with CSV and JSON Data (LabX Basic & Advanced) | [Learning Outcomes Week 8](./week8/Week8_Summary.md) | [week8](./week8) |
+| 10 | Automating Spreadsheets (LabX Basic & Advanced) | [Learning Outcomes Week 10](./week10/Week10_Summary.md) | [week10](./week10) |
+| 11 | Automating PDFs & Word Documents (LabX Basic & Advanced) | [Learning Outcomes Week 11](./week11/Week11_Summary.md) | [week11](./week11) |
+| 12 | Final Project & Agentic Communication (Email & SMS) | [Learning Outcomes Week 12](./week12/Week12_Summary.md) | [week12](./week12) |
+| – | Class Activity 1–4 (คะแนนเสริม) | [รายการกิจกรรม](./Class%20activity/README.md) | [Class activity](./Class%20activity) |
 
 ---
 
@@ -66,3 +72,41 @@
 - **LO 6.3:** สามารถแยกแยะขอบเขตตัวแปร (Variable Scope) ระหว่าง Local และ Global และนำเข้าใช้งานฟังก์ชันจากโมดูลมาตรฐานและโมดูลที่สร้างขึ้นเองได้
 - **ไฟล์ปฏิบัติการ:** Sec2_week6_6633803030-5.ipynb, lab6_1.py, my_utils.py, main_program.py, activity6_1.py
 - **เอกสารผลลัพธ์การเรียนรู้:** [Week6_Summary.md](./week6/Week6_Summary.md)
+
+### สัปดาห์ที่ 7: Web Scraping
+- **LO 7.1:** สามารถดึงและแยกข้อมูลจาก HTML ด้วย `requests` และ `BeautifulSoup4` พร้อมจัดการข้อผิดพลาดของเครือข่ายได้
+- **LO 7.2:** สามารถควบคุมเบราว์เซอร์ด้วย Selenium (headless, explicit wait, pagination) และออกแบบ scraper แบบ config-driven พร้อม retry ได้
+- **LO 7.3:** สามารถอธิบายข้อพิจารณาด้านจริยธรรมและกฎหมายของการทำ web scraping ได้
+- **ไฟล์ปฏิบัติการ:** web-scraping-intro/ (LabX Basic), agentic-web-scraper/ (LabX ADV)
+- **เอกสารผลลัพธ์การเรียนรู้:** [Week7_Summary.md](./week7/Week7_Summary.md)
+
+### สัปดาห์ที่ 8: Automating with CSV and JSON Data
+- **LO 8.1:** สามารถอ่าน เขียน กรอง และรวมกลุ่มข้อมูล CSV ด้วยโมดูล `csv` ได้
+- **LO 8.2:** สามารถจัดการ JSON แบบซ้อน (อัปเดต เพิ่ม ค้นด้วย dot-path) และแปลง CSV ↔ JSON ได้
+- **LO 8.3:** สามารถสร้าง Data Agent ที่ทำงานตาม pipeline ใน config พร้อม audit report ได้
+- **ไฟล์ปฏิบัติการ:** data-processor/ (LabX Basic), agentic-data-processor/ (LabX ADV)
+- **เอกสารผลลัพธ์การเรียนรู้:** [Week8_Summary.md](./week8/Week8_Summary.md)
+
+### สัปดาห์ที่ 10: Automating Spreadsheets
+- **LO 10.1:** สามารถอ่าน/สร้าง/จัดรูปแบบไฟล์ Excel ด้วย `openpyxl` ได้
+- **LO 10.2:** สามารถใช้สูตร, Conditional Formatting, Data Validation และกราฟผ่านโค้ดได้
+- **LO 10.3:** สามารถสร้าง Spreadsheet Agent ที่บันทึกการทำงานลงชีต Audit Log และอธิบายแนวคิด Google Sheets API ได้
+- **ไฟล์ปฏิบัติการ:** spreadsheet-automator/ (LabX Basic), agentic-spreadsheet-processor/ (LabX ADV)
+- **เอกสารผลลัพธ์การเรียนรู้:** [Week10_Summary.md](./week10/Week10_Summary.md)
+
+### สัปดาห์ที่ 11: Automating PDFs & Word Documents
+- **LO 11.1:** สามารถดึงข้อความ รวม และใส่ลายน้ำไฟล์ PDF ด้วย `PyPDF2` และ `reportlab` ได้
+- **LO 11.2:** สามารถสร้างเอกสาร Word และรายงานจาก template ด้วย `python-docx` ได้
+- **LO 11.3:** สามารถสร้าง Document Agent ที่ทำงานตาม config พร้อม audit report ได้
+- **ไฟล์ปฏิบัติการ:** document-automator/ (LabX Basic), agentic-document-automator/ (LabX ADV)
+- **เอกสารผลลัพธ์การเรียนรู้:** [Week11_Summary.md](./week11/Week11_Summary.md)
+
+### สัปดาห์ที่ 12: Final Project & Agentic Communication
+- **LO 12.1:** สามารถพัฒนา Task Manager แบบ OOP หลายโมดูล พร้อม Search / Filter / Sort และ Unit Tests ได้
+- **LO 12.2:** สามารถส่งอีเมล/SMS แบบ template และประมวลผลอีเมลขาเข้าด้วยกฎ if-then โดยจัดการ credentials ผ่าน `.env` ได้
+- **ไฟล์ปฏิบัติการ:** final_task_manager_project/ (Lab 12), agentic-comm-automator/ (LabX ADV)
+- **เอกสารผลลัพธ์การเรียนรู้:** [Week12_Summary.md](./week12/Week12_Summary.md)
+
+### Class Activity (คะแนนเสริม)
+- Activity 1–4: Simple CLI Task Manager, OOP Refactoring, Web API Fetcher, Project Planning & Design
+- **โฟลเดอร์:** [Class activity](./Class%20activity)
