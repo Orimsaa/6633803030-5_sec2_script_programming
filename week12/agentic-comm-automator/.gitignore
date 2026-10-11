@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.venv/
+
+# Secrets: Gmail address + app password
+.env
+
+# Runtime folders (downloaded attachments / dry-run mailboxes)
+data/incoming_attachments/
+mock_inbox/
+outbox/
+
+# Editor / OS
+.vscode/
+.DS_Store

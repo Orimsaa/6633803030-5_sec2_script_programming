@@ -1,0 +1,85 @@
+{
+    "on_error_notify": "{sender_email}",
+    "tasks": [
+        {
+            "name": "Send Daily Sales Report Email",
+            "type": "send_email",
+            "output_context_key": "daily_report_email",
+            "parameters": {
+                "recipients": {
+                    "to": ["{recipient_email}"],
+                    "cc": ["{sender_email}"]
+                },
+                "subject_template": "Daily Sales Report - {report_date}",
+                "body_template": "<h2>Daily Sales Report ({report_date})</h2><p>Dear Team,</p><p>Please find the latest sales report attached.</p><table border='1' cellpadding='6' cellspacing='0'><tr><th align='left'>Total sales</th><td>${sales_figure:,.2f}</td></tr><tr><th align='left'>Active customers</th><td>{total_customers}</td></tr></table><p>Best regards,<br>Automated Communication Agent</p>",
+                "attachments": [
+                    "data/reports/sales_report.pdf",
+                    "data/reports/summary_data.xlsx"
+                ],
+                "is_html": true
+            }
+        },
+        {
+            "name": "Send Sales Summary SMS",
+            "type": "send_sms",
+            "parameters": {
+                "phone_numbers": ["{sms_phone}"],
+                "carrier_name": "{sms_carrier}",
+                "message_template": "Sales {report_date}: ${sales_figure:,.2f}, {total_customers} customers. Report emailed to {recipient_email}."
+            }
+        },
+        {
+            "name": "Simulate Incoming Request Email (to self)",
+            "type": "send_email",
+            "parameters": {
+                "recipients": {
+                    "to": ["{sender_email}"]
+                },
+                "subject_template": "Data Request for {report_date} - Urgent",
+                "body_template": "Hello Agent,\n\nWe need the latest data for {report_date}. Please process urgently. This is an urgent request for new data processing.\n\nThanks.",
+                "attachments": ["data/reports/sales_report.pdf"],
+                "is_html": false
+            }
+        },
+        {
+            "name": "Process Incoming Data Requests",
+            "type": "process_inbox",
+            "output_context_key": "inbox_result",
+            "parameters": {
+                "mailbox": "INBOX",
+                "search_criteria": {
+                    "status": "UNSEEN",
+                    "from_sender": "{sender_email}",
+                    "subject_contains": "Data Request"
+                },
+                "rules": [
+                    {
+                        "if": {"from_contains": "{sender_email}", "subject_contains": "Request", "has_attachments": true},
+                        "then": {
+                            "download_attachments": true,
+                            "download_dir": "data/incoming_attachments",
+                            "allowed_extensions": [".pdf", ".xlsx"],
+                            "mark_as_read": true
+                        }
+                    },
+                    {
+                        "if": {"body_contains": "urgent"},
+                        "then": {
+                            "send_sms_alert": true,
+                            "alert_phone_numbers": ["{sms_phone}"],
+                            "alert_carrier": "{sms_carrier}",
+                            "alert_message_template": "URGENT: New data request from {sender} - {subject}"
+                        }
+                    },
+                    {
+                        "if": {"body_contains": "new data processing"},
+                        "then": {
+                            "reply_subject_template": "Re: {subject} - Received & Processing",
+                            "reply_with_template": "Agent received your request '{subject}'.\nWe are now processing the new data and will send the result soon.\n\n-- Automated Communication Agent"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}

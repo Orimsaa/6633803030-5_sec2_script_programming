@@ -1,0 +1,141 @@
+[
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "INFO",
+        "task_type": "agent_run",
+        "message": "Communication Agent started.",
+        "details": {
+            "dry_run": true
+        }
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "INFO",
+        "task_type": "send_email",
+        "message": "Starting task 'Send Daily Sales Report Email'",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "SUCCESS",
+        "task_type": "send_email",
+        "message": "Task 'Send Daily Sales Report Email' completed.",
+        "details": {
+            "recipients": {
+                "to": [
+                    "agent@example.com"
+                ],
+                "cc": [
+                    "agent@example.com"
+                ]
+            },
+            "subject": "Daily Sales Report - 2026-10-11"
+        }
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "INFO",
+        "task_type": "send_sms",
+        "message": "Starting task 'Send Sales Summary SMS'",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "SUCCESS",
+        "task_type": "send_sms",
+        "message": "Task 'Send Sales Summary SMS' completed.",
+        "details": {
+            "phone_numbers": [
+                "1234567890"
+            ],
+            "message": "Sales 2026-10-11: $12,345.67, 500 customers. Report emailed to agent@example.com."
+        }
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "INFO",
+        "task_type": "send_email",
+        "message": "Starting task 'Simulate Incoming Request Email (to self)'",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "SUCCESS",
+        "task_type": "send_email",
+        "message": "Task 'Simulate Incoming Request Email (to self)' completed.",
+        "details": {
+            "recipients": {
+                "to": [
+                    "agent@example.com"
+                ]
+            },
+            "subject": "Data Request for 2026-10-11 - Urgent"
+        }
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "INFO",
+        "task_type": "process_inbox",
+        "message": "Starting task 'Process Incoming Data Requests'",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "INFO",
+        "task_type": "process_inbox",
+        "message": "Processing email 'Data Request for 2026-10-11 - Urgent' from agent@example.com",
+        "details": {
+            "attachments": [
+                "sales_report.pdf"
+            ]
+        }
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "INFO",
+        "task_type": "rule_engine",
+        "message": "Rule 1 matched -> actions ['download_attachments', 'mark_as_read']",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "INFO",
+        "task_type": "rule_engine",
+        "message": "Rule 2 matched -> actions ['send_sms_alert']",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "INFO",
+        "task_type": "rule_engine",
+        "message": "Rule 3 matched -> actions ['reply_with_template']",
+        "details": {}
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "SUCCESS",
+        "task_type": "process_inbox",
+        "message": "Task 'Process Incoming Data Requests' completed.",
+        "details": {
+            "emails_found": 1,
+            "processed": [
+                {
+                    "subject": "Data Request for 2026-10-11 - Urgent",
+                    "actions": [
+                        "downloaded 1 attachment(s)",
+                        "marked as read",
+                        "sms alert sent",
+                        "auto-reply sent"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "timestamp": "2026-10-11T15:40:55",
+        "status": "INFO",
+        "task_type": "agent_run_summary",
+        "message": "Finished 4/4 task(s) successfully in 0.09s.",
+        "details": {}
+    }
+]
