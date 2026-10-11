@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "description": "Read Week 7 lab sheet",
+        "completed": true,
+        "priority": "High"
+    },
+    {
+        "id": 2,
+        "description": "Push project to GitHub",
+        "completed": false,
+        "priority": "Medium"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "description": "งาน 1: อ่านเอกสาร OOP",
+        "completed": false
+    },
+    {
+        "id": 2,
+        "description": "งาน 2: Refactor Task Manager",
+        "completed": true
+    }
+]
